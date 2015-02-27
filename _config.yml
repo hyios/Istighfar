@@ -1,0 +1,24 @@
+encoding: "utf-8"
+permalink: /:title/
+
+
+defaults:
+  -
+    scope:
+      path: _posts/en
+    values:
+      layout: html
+      lang: en
+  -
+    scope:
+      path: _posts/sv
+    values:
+      layout: html
+      lang: sv
+  -
+    scope:
+      path: _posts/fi
+    values:
+      layout: html
+      lang: fi
+

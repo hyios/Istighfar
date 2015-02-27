@@ -1,0 +1,22 @@
+body {
+  color: #222;
+  font-size: 16px;
+}
+
+blockquote {
+  margin-bottom: 20px;
+
+  font-size: 1.2em;
+  font-family: times, serif;
+  color: #000;
+
+}
+
+
+.ballot_box_with_check:before {
+  content: "\2611\ ";
+}
+
+.ballot_box:before {
+  content: "\2610\ ";
+}
