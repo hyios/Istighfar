@@ -26,10 +26,10 @@ module Jekyll
         doc = Nokogiri::HTML(open(url))
 
         doc.css('#quranOutput .verse').each do |div|
-          id = div.id
+          id = div['id']
 
-          @textEn += div.css('#' + id + "_language_6_content").first.content
-          @textAr += div.css('#' + id + "_language_2_content").first.content
+          @textEn += "foo" #div.css('#' + id + "_language_6_content").first.content
+          @textAr += "bar" #div.css('#' + id + "_language_2_content").first.content
         end
 
         @link = url
